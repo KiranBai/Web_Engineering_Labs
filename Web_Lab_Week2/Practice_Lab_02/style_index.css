@@ -1,0 +1,16 @@
+h2 {
+color: green;
+}
+p{
+    color: blue;
+    font-style: italic;
+}
+h3{
+    color: brown;
+}
+.box{
+    color: red;
+    padding: 20px;
+    margin: 20px;
+    border: solid green;
+}

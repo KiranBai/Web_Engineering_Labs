@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outer-square {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        .inner-square {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+        }
+
+        .left-up { top: 0; left: 0; }
+        .right-up { top: 0; right: 0; }
+        .left-bottom { bottom: 0; left: 0; }
+        .right-bottom { bottom: 0; right: 0; }
+        .center { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    </style>
+    <title>Square Layout</title>
+</head>
+<body>
+    <div class="outer-square">
+        <div class="inner-square left-up"></div>
+        <div class="inner-square right-up"></div>
+        <div class="inner-square left-bottom"></div>
+        <div class="inner-square right-bottom"></div>
+        <div class="inner-square center"></div>
+    </div>
+</body>
+</html>
+
