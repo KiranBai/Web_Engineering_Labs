@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="color_style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <button id="b1">OnClick</button>
+    <button id="b2">Generate</button>
+    <div id="container">
+        <div class="column" column1>1</div>
+        <div class="column" column2>2</div>
+        <div class="column" column3>3</div>
+        <div class="column" column4>4</div>
+    </div>
+    <script>
+        const b1 = document.getElementById("b1")
+        const b2 = document.getElementById("b2")
+
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+function buttonPressed() {
+    const container = document.getElementById("container");
+    console.log(" i am button. ");
+    const column = document.createElement("div");
+    column.className = "column";
+    container.appendChild(column);
+  }
+  function changeColor(column) {
+        column.style.backgroundColor = getRandomColor();
+    }
+
+    function colorPressed() {
+        var columns = document.getElementsByClassName("column");
+        for (var i = 0; i < columns.length; i++) {
+            changeColor(columns[i]);
+        }
+    }
+
+
+  b1.style.backgroundColor = "red"
+  b1.onclick = buttonPressed;
+  b2.style.backgroundColor = "aqua"
+  b2.onclick = colorPressed;
+
+
+    </script>
+        
+</body>
+</html>

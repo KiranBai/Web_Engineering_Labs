@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1id1">Heading1 Id1</h1>
+    <h2 id="h2id2">Haeding2 Id2</h2>
+    <p id="p1">Paragraph1 P1</p>
+    <p id="p2">Paragraph2 P2</p>
+    <button id="b1">OnClick</button>
+    <div id="container"></div>
+    <script>
+        const h1 = document.getElementById("h1id1");
+        h1.style.color =  "green";
+        h1.style.backgroundColor ="pink";
+        const b1 = document.getElementById("b1");
+        b1.style.color = "red";
+        b1.style.backgroundColor ="yellow";
+        function ButtonPressed() {
+            alert('Kiran Button was Pressed!');
+            b1.style.backgroundColor ="pink";
+            for(i=0; i<5; i++){
+            const ball=document.createElement('div')
+            ball.className="ball"
+            container.appendChild(ball)}
+            }
+            b1.onclick = ButtonPressed;
+        
+
+
+            
+    </script>
+</body>
+</html>
