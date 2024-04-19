@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="p">+</button>
+    <label id="l" for="number">0</label>
+    <button id="m">-</button>
+    
+    <script>
+        
+        const add = document.getElementById("p");
+        const lab = document.getElementById("l");
+        const minus = document.getElementById("m");
+        let number = 0;
+        function addition () {
+            number++;
+            lab.innerHTML = number;
+            localStorage.setItem('l', number);
+        }
+
+        add.onclick=addition;
+        function sub () {
+            number--;
+            lab.innerHTML = number;
+            localStorage.setItem('l', number);
+        }
+        minus.onclick=sub;
+        lab.innerHTML=localStorage.getItem('l');
+    </script>
+</body>
+</html>

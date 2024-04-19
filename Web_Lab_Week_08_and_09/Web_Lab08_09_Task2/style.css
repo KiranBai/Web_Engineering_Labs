@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .invitation {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e4c1ee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .invitation h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .invitation p {
+    margin: 0;
+    color: #666;
+  }
+  
+  .invitation .details {
+    margin-top: 10px;
+  }
+  
+  .invitation .details p {
+    margin-bottom: 5px;
+  }
+  
+  .invitation .rsvp {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  
+  
